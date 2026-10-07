@@ -1,0 +1,23 @@
+[project]
+name = "sd-xl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Grosth", email = "herobrine3335@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "diffusers>=0.41.0",
+    "safetensors>=0.8.0",
+    "torch>=2.14.1",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+sd-xl = "sd_xl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
